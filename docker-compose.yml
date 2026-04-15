@@ -35,6 +35,8 @@ services:
       context: ./stat
     environment:
       STAT_PORT: "8002"
-      SQLITE_PATH: /tmp/listenai.db
+      SQLITE_PATH: /app/data/listenai.db
     ports:
       - "8002:8002"
+    volumes:
+      - ./data:/app/data
