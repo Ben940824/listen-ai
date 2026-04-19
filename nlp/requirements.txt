@@ -1,3 +1,12 @@
 fastapi==0.116.1
 uvicorn==0.35.0
 pydantic==2.11.7
+# ML inference (loaded at runtime when model/ directory is present)
+scikit-learn==1.6.1
+joblib>=1.3.0
+# Data processing for train_model.py (not used by the running service)
+pandas>=2.0.0
+# OpenAI client for label_data.py (not used by the running service)
+openai==1.82.0
+# .env loader for local development scripts
+python-dotenv>=1.0.0
